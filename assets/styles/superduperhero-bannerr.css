@@ -1,0 +1,91 @@
+#superduperhero-bannerr {
+  margin: 0;
+  background: #FDFAF6;
+  padding: 74px 0;
+  text-align: center;
+  font-size: 26px;
+}
+
+.superduperhero-headerr h1{
+  font-size: 58px;
+}
+
+.card-containerr {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  border: none;
+  gap: 2px; 
+}
+
+.cardheaderr {
+  background: transparent;
+}
+
+.cardheaderr img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; 
+  transition: transform 0.3s ease;
+}
+
+#cardd:hover .cardheaderr img {
+  transform: scale(1.05);
+}
+
+#cardd { 
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+  flex: 1 1 auto;
+  max-width: 400px;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  #superduperhero-bannerr {
+    font-size: 18px;
+    padding: 40px 10px;
+  }
+  #cardd {
+    flex: 1 1 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  #superduperhero-bannerr {
+    font-size: 20px;
+    padding: 50px 20px;
+  }
+  #cardd {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #superduperhero-bannerr {
+    font-size: 22px;
+    padding: 60px 30px;
+  }
+  #cardd {
+    flex: 1 1 30%;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #superduperhero-bannerr {
+    font-size: 26px;
+    padding: 74px 0;
+  }
+  #cardd {
+    flex: 1 1 25%;
+    max-width: 400px;
+  }
+}
